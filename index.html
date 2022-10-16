@@ -2,6 +2,7 @@
 <html>
     <head>
         <script>
+
             (function(w){
                 var cache = {}
                 function getCachedThing(key) {
@@ -14,10 +15,11 @@
                 var i = 0;
                 setInterval(function() {
                     getCachedThing(i++);
-                }, 10);
+                }, 100);
                 w.getCachedThing = getCachedThing
             })(window);
-         </script>
+
+        </script>
     </head>
     <body>
         <p> Hello! </p>
